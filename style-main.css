@@ -1,0 +1,101 @@
+/* Menambah margin dan padding untuk elemen */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #2a5298;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #1c4062;
+}
+
+/* Menambahkan desain pada grid tugas */
+.tasks-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.task-card {
+    background: #4a90e2;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Menambahkan desain untuk panel dasar hukum */
+.legal-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reg-card {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reg-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.reg-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.badge {
+    display: inline-block;
+    background: #4a90e2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+/* Memperbaiki tampilan responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    .tasks-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .task-card {
+        font-size: 0.9rem;
+    }
+
+    .reg-card {
+        font-size: 0.9rem;
+    }
+}
